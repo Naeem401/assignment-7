@@ -31,7 +31,7 @@ function NavBar() {
 
   return (
     <div className=' bg-[#E4E4E7]'>
-      <nav className="flex items-center justify-between ">
+      <nav className="flex items-center justify-between w-[90%] mx-auto">
       {/* Left Section - Logo */}
       <img src={logo} alt="Company Logo" className="h-8" />
 
