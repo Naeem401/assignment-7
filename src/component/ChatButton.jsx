@@ -16,7 +16,7 @@ const ChatButton = () => {
   };
 
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-10 right-10 z-50">
       {isChatOpen && (
         <div className="bg-white rounded-lg shadow-lg w-80 h-96 flex flex-col">
           {/* Chat Header */}

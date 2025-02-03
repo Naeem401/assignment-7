@@ -1,6 +1,7 @@
 import { FiSearch } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
-function Header({ title }) {
+function Header({ title, button, link }) {
   return (
     <header className="bg-[#E4E4E7]">
       <div className="p-4 flex flex-col md:flex-row justify-between items-center w-[90%] mx-auto gap-4 md:gap-0">
@@ -25,9 +26,11 @@ function Header({ title }) {
               <span className="md:hidden">Date</span>
             </button>
             
-            <button className="w-full md:w-auto px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 text-sm md:text-base">
-              Cypher AI
+           <Link to={link}>
+           <button className="w-full md:w-auto px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 text-sm md:text-base">
+              {button}
             </button>
+           </Link>
           </div>
         </div>
       </div>
