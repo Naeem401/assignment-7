@@ -62,11 +62,12 @@ const ProgressBarPage = () => {
       </div>
 
       {/* Get Started Button */}
-      <Link to="/new-incident">
-      <button className="bg-orange-500 text-white px-6 py-3 rounded-lg mt-12 font-bold shadow-md">
-        Get started
-      </button>
-      </Link>
+<Link to="/incidents/new-incident">
+  <button className="bg-orange-500 text-white px-6 py-3 rounded-lg mt-12 font-bold shadow-md">
+    Get started
+  </button>
+</Link>
+
     </div>
   );
 };
