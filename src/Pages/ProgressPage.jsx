@@ -1,4 +1,5 @@
 
+import { Link } from "react-router-dom";
 import logo1 from "../assets/img/Frame1.png"
 import logo2 from "../assets/img/Frame2.png"
 import logo3 from "../assets/img/Frame3.png"
@@ -61,9 +62,11 @@ const ProgressBarPage = () => {
       </div>
 
       {/* Get Started Button */}
+      <Link to="/new-incident">
       <button className="bg-orange-500 text-white px-6 py-3 rounded-lg mt-12 font-bold shadow-md">
         Get started
       </button>
+      </Link>
     </div>
   );
 };
