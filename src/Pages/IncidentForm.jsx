@@ -4,7 +4,7 @@ import HeaderTwo from "../component/HeaderTwo";
 const IncidentForm = () => {
   return (
    <>
-    <HeaderTwo link1="/" link2="/incidents" link3="/incidents/progress-page" />
+    <HeaderTwo link1="/incidents" link2="/incidents/new-incident" link3="/incidents/incident-location" />
     <div className="max-w-2xl mx-auto mt-6">
       {/* Incident Title */}
       <div className="mb-6">

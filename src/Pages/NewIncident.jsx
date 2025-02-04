@@ -44,7 +44,7 @@ function NewIncident() {
       const [selected, setSelected] = useState(null);
   return (
     <div>
-        <HeaderTwo link1="/incidents/progress-page" link2="/incidents/progress-page" link3="/incidents/incident-form"/>
+        <HeaderTwo link1="/incidents" link2="/incidents/progress-page" link3="/incidents/incident-form"/>
         <div className="flex flex-col items-center mt-6">
       <h2 className="text-xl font-bold mb-4">Which of these best describes the incident?</h2>
 

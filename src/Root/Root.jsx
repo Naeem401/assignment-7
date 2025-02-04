@@ -6,6 +6,7 @@ import ProgressPage from "../Pages/ProgressPage";
 import NewIncident from "../Pages/NewIncident";
 import IncidentForm from "../Pages/IncidentForm";
 import IncidentLayout from "../MainLayout/IncidentLayout";
+import IncidentLocationPage from "../Pages/IncidentLocationPage";
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ index: true,
             path: "incident-form",
             element: <IncidentForm />,
           },
+          {
+            path: "incident-location",
+            element: <IncidentLocationPage />,
+          }
         ],
       },
     ],
