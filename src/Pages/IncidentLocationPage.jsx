@@ -6,7 +6,7 @@ import HeaderTwo from "../component/HeaderTwo";
 const IncidentLocationPage = () => {
   return (
     <>
-    <HeaderTwo link1="/incidents" link2="/incidents/incident-form" link3="/incidents" />
+    <HeaderTwo link1="/incidents" link2="/incidents/incident-form" link3="/incidents" button="Finished"/>
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <div className="max-w-4xl w-full bg-white shadow-lg rounded-lg p-6 relative">
         <h2 className="text-2xl font-bold mb-4">Where’s the incident?</h2>

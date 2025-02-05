@@ -1,48 +1,46 @@
 import { Link } from "react-router-dom";
 
-
-const HeaderTwo = ({link1, link2, link3}) => {
+const HeaderTwo = ({ link1, link2, link3, button }) => {
   return (
-
     <div className="bg-[#E4E4E7]">
- <div className="p-4 flex items-center justify-between w-[90%] mx-auto">
-      <div className="flex items-center gap-4">
-      
-        <Link to={link1}>
-        <button className="text-gray-500 text-lg font-bold">✕</button>
-        </Link>
-        
-       
-        <div>
-          <p className="text-gray-500 text-sm">Home - Incidents - New Incident</p>
-          <h2 className="text-xl font-bold">New Incident</h2>
+      <div className="mx-auto w-[90%] max-w-screen-2xl p-4 sm:p-6">
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          {/* Left Section */}
+          <div className="flex w-full items-center gap-2 md:w-auto md:gap-4">
+            <Link to={link1} className="shrink-0">
+              <button className="text-lg font-bold text-gray-500 md:text-xl">✕</button>
+            </Link>
+            <div className="min-w-0">
+              <p className="hidden truncate text-sm text-gray-500 xs:block">
+                Home - Incidents - New Incident
+              </p>
+              <h2 className="truncate text-lg font-bold md:text-xl">New Incident</h2>
+            </div>
+          </div>
+
+          {/* Progress Bar - Hidden on mobile */}
+          <div className="hidden w-full flex-grow md:mx-6 md:block">
+            <div className="relative mx-auto h-1 w-3/4 rounded-lg bg-gray-300 lg:w-1/2">
+              <div className="h-1 w-1/4 rounded-lg bg-orange-500"></div>
+            </div>
+          </div>
+
+          {/* Right Buttons */}
+          <div className="flex w-full justify-end gap-2 sm:w-auto sm:justify-normal sm:gap-3">
+            <Link to={link2} className="shrink-0">
+              <button className="w-full rounded-lg border border-gray-400 px-3 py-2 text-sm text-gray-700 sm:px-4 sm:py-2 sm:text-base md:px-5">
+                Back
+              </button>
+            </Link>
+            <Link to={link3} className="shrink-0">
+              <button className="w-full rounded-lg bg-orange-500 px-3 py-2 text-sm text-white sm:px-4 sm:py-2 sm:text-base md:px-5">
+                {button}
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
-
-      
-      <div className="flex-grow mx-6">
-        <div className="h-1 bg-gray-300 w-3/4 rounded-lg relative mx-auto">
-          <div className="h-1 bg-orange-500 w-1/4 rounded-lg"></div>
-        </div>
-      </div>
-
-      
-      <div className="flex gap-3">
-        <Link to={link2}>
-        <button className="px-5 py-2 border border-gray-400 rounded-lg text-gray-700">
-          Back
-        </button>
-        </Link>
-        <Link to={link3}>
-        <button className="px-5 py-2 bg-orange-500 text-white rounded-lg">
-          Next Step
-        </button>
-        </Link>
-        
-      </div>
     </div>
-    </div>
-   
   );
 };
 

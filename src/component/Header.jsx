@@ -1,12 +1,12 @@
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-function Header({ title, button, link }) {
+function Header({subTitle, title, button, link }) {
   return (
     <header className="bg-[#E4E4E7]">
       <div className="p-4 flex flex-col md:flex-row justify-between items-center w-[90%] mx-auto gap-4 md:gap-0">
         <div className="w-full md:w-auto">
-          <h4 className="text-xs md:text-[12px] font-normal text-[#71717A]">Welcome back</h4>
+          <h4 className="text-xs md:text-[12px] font-normal text-[#71717A]">{subTitle}</h4>
           <h1 className="text-lg md:text-xl font-semibold text-gray-900">{title}</h1>
         </div>
         

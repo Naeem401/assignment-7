@@ -5,7 +5,7 @@ import logo from '../assets/img/logo.png';
 const navItems = {
   dashboard: '/',
   incidents: '/incidents',
-  locations: '/locations',
+  locations: '/location',
   activities: '/activities',
   documents: '/documents',
   cypherAi: '/cypher-ai'

@@ -4,8 +4,8 @@ import HeaderTwo from "../component/HeaderTwo";
 const IncidentForm = () => {
   return (
    <>
-    <HeaderTwo link1="/incidents" link2="/incidents/new-incident" link3="/incidents/incident-location" />
-    <div className="max-w-2xl mx-auto mt-6">
+    <HeaderTwo link1="/incidents" link2="/incidents/new-incident" link3="/incidents/incident-location" button="Next Step" />
+    <div className="max-w-2xl mx-auto mt-6 p-6">
       {/* Incident Title */}
       <div className="mb-6">
         <h2 className="text-xl font-bold">Let’s give the incident a title?</h2>

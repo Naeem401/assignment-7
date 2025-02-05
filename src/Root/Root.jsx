@@ -7,6 +7,7 @@ import NewIncident from "../Pages/NewIncident";
 import IncidentForm from "../Pages/IncidentForm";
 import IncidentLayout from "../MainLayout/IncidentLayout";
 import IncidentLocationPage from "../Pages/IncidentLocationPage";
+import LocationPage from "../Pages/LocationPage";
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Dashboard />,
+      },
+      {
+path: "/location",
+        element: <LocationPage />,
       },
       {
         path: "/incidents",
